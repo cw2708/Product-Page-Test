@@ -24,26 +24,98 @@
     padding-right: 2vw;
 }
 
-
 .Product-Page-Container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; 
 }
 
-.Product-Info {
-    flex: 1 1 100%;
+.Product-Info, .Product-Image {
+    flex: 1 1 100%; 
+    margin-top: 10vh; 
 }
 
-.Product-Image {
-    flex: 1 1 50%;
+.Product-Image img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; 
+}
+.Product-Title{
+    font-size: x-large;
+    margin-bottom: 4vh;
+}
+.Product-Price{
+    font-weight: bold;
+    margin-bottom: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-top: 1px solid #CCCCCC; 
+    border-bottom: 1px solid #CCCCCC; 
+
 }
 
+.Product-Descripion{
+    margin-bottom: 4vh;
+    color: #888888;
+}
+.Product-Size{
+    font-weight: bold;
+    color: #888888;
+}
+.Product-Size .selected-size {
+    color: black; 
+}
+.star-color {
+    color: #C90000;
+}
+
+.Size-Button-Container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+
+.Size-Button {
+    width: 35px; 
+    height: 35px; 
+    background-color: white;
+    border: 2px solid  #CCCCCC;
+    color: black;
+    font-weight: 500;
+    border-radius: 0; 
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.Size-Button:hover {
+    background-color: #f0f0f0;
+    border-color:black; 
+}
+.Add-Product{
+    width: 100px; 
+    height: 35px; 
+    background-color: white;
+    border: 2px solid  #CCCCCC;
+    color: black;
+    font-weight: 500;
+    border-radius: 0; 
+    margin-bottom: 3vh;
+}
+.Add-Product:hover {
+    background-color: #f0f0f0;
+    border-color:black; 
+}
 @media screen and (min-width: 768px) {
-    .Product-Info {
-        flex: 1 1 50%;
+    .Product-Info, .Product-Image {
+        flex: 0 1 45%; 
     }
-
-    .Product-Image {
-        flex: 1 1 50%;
+}
+@media screen and (max-width: 767px) {
+    .Product-Info {
+        text-align: center; 
+        margin-top: 2vh;
+    }
+    .Size-Button-Container {
+        justify-content: center;
     }
 }
