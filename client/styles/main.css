@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Header-Container{
+    height:3vh;
+    background-color: #fff ;
+}
+.nav{
+    background-color: #F6F6F7;
+    width:100%;
+}
+.Nav-Container{
+    display:flex;
+    justify-content: flex-end;
+}
+.Cart-Button{
+    margin-right: 1vw;
+    width:10%;
+    height:5vh;
+    color:#888888;
+    font-size: 12px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+
+.Product-Page-Container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Product-Info {
+    flex: 1 1 100%;
+}
+
+.Product-Image {
+    flex: 1 1 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .Product-Info {
+        flex: 1 1 50%;
+    }
+
+    .Product-Image {
+        flex: 1 1 50%;
+    }
+}
